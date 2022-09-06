@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex flex-row flex-wrap bg-[#1890ff] p-5 -m3 ">
+    <div className="flex flex-row flex-wrap bg-black p-5 -m3 ">
       <div className="pl-5 pr-5 md:pt-0 pt-3">
         <Link to="/">
           <img

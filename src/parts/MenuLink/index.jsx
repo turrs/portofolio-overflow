@@ -29,9 +29,9 @@ const MenuLink = () => {
         <Item key="item2" icon={<UserOutlined />}>
           Profile
         </Item>
-        <Item key="item3" icon={<AppstoreOutlined />}>
+        {/* <Item key="item3" icon={<AppstoreOutlined />}>
           Playground
-        </Item>
+        </Item> */}
       </Menu>
     </div>
   );
