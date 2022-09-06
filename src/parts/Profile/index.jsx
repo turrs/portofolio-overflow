@@ -1,5 +1,6 @@
 import { Typography } from "antd";
 import React from "react";
+import { LabelSection } from "../../components";
 import Organization from "../Organizational";
 
 const Profile = () => {
@@ -28,7 +29,7 @@ const Profile = () => {
         </Text>
       </div>
       <div className="pt-5">
-        <Text>Organizational Experience</Text>
+        <LabelSection label="Organizational Experience"></LabelSection>
         <div>
           <Organization />
         </div>
