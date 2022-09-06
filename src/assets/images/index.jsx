@@ -1,5 +1,5 @@
 import IGithub from "./github.svg";
-import Iavatar from "./avatar.jpg";
+import Iavatar from "./avatar-fatur.jpg";
 import Ibook from "./book.svg";
 import IdataOn from "./dataon.png";
 import IadminStaycation from "./admin-staycation.png";
