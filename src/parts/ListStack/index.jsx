@@ -1,5 +1,12 @@
 import React from "react";
-import { Ieslint, IGithub, Itailwindui } from "../../assets/images";
+import {
+  Iantd,
+  Ieslint,
+  IGithub,
+  Ireact,
+  Itailwindui,
+  Ivite,
+} from "../../assets/images";
 import { Stack } from "../../components";
 
 const ListStack = () => {
@@ -33,10 +40,32 @@ const ListStack = () => {
         />
       </div>
       <div className="p-2">
-        <Stack />
+        <Stack
+          name="React"
+          description="A JavaScript library for building user interfaces"
+          image={Ireact}
+          link="https://reactjs.org/"
+          type="devtools"
+        />
       </div>
       <div className="p-2">
-        <Stack />
+        <Stack
+          name="Ant Design"
+          description="A design system for enterprise-level products. Create an efficient and
+          enjoyable work experience."
+          image={Iantd}
+          link="https://ant.design/"
+          type="devtools"
+        />
+      </div>
+      <div className="p-2">
+        <Stack
+          name="Vite js"
+          description="Next Generation Frontend Tooling"
+          image={Ivite}
+          link="https://vitejs.dev/"
+          type="devtools"
+        />
       </div>
     </div>
   );
