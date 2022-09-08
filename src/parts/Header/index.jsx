@@ -1,56 +1,117 @@
-import { Avatar, Image, Input } from "antd";
-import { AlertOutlined, PlusOutlined } from "@ant-design/icons";
-import React from "react";
-import { Iavatar, IGithub } from "../../assets/images";
-import { ButtonType, NavLink, SearchBar } from "../../components";
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-
+import { IGithub } from "../../assets/images";
+import { NavLink } from "../../components";
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex flex-row flex-wrap bg-black p-5 -m3 ">
-      <div className="pl-5 pr-5 md:pt-0 pt-3">
-        <Link to="/">
-          <img
-            className="w-[32px] rounded-[30px] bg-white h-[32px]"
-            src={IGithub}
-          />
-        </Link>
-      </div>
-      <div className="md:w-[300px] w-[260px] p-3 md:p-0">
-        <SearchBar style={{ borderRadius: 5, width: "100%" }} />
-      </div>
-      <div className="flex flex-row">
-        {/* <NavLink
-          style={{ color: "white" }}
-          type="link"
-          text="Pull request"
-          href="/pull-request"
-        /> */}
-        <NavLink style={{ color: "white" }} type="link" text="Home" href="/" />
-        <NavLink
-          style={{ color: "white" }}
-          type="link"
-          text="Project"
-          href="/project"
-        />
-        {/* <NavLink
-          style={{ color: "white" }}
-          type="link"
-          text="Explore"
-          href="/explore"
-        /> */}
-      </div>
-      <div className="flex justify-end grow">
-        <div className="pr-5">
-          <AlertOutlined style={{ color: "white" }} />
+    <div>
+      <nav className="bg-white shadow-md shadow-blue">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Link to="/">
+                  <img
+                    className="w-[32px] rounded-[30px] bg-white h-[32px]"
+                    src={IGithub}
+                  />
+                </Link>
+              </div>
+              <div className="hidden md:block">
+                <div className="ml-10 flex items-baseline space-x-4">
+                  <NavLink
+                    style={{ color: "#1890ff" }}
+                    type="link"
+                    text="Home"
+                    href="/"
+                  />
+                  <NavLink
+                    style={{ color: "#1890ff" }}
+                    type="link"
+                    text="Project"
+                    href="/project"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="-mr-2 flex md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                type="button"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                {!isOpen ? (
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="pr-5">
-          <PlusOutlined style={{ color: "white" }} />
-        </div>
-        <div>
-          <Avatar src={<Image src={Iavatar}></Image>} />
-        </div>
-      </div>
+
+        <Transition
+          show={isOpen}
+          enter="transition ease-out duration-100 transform"
+          enterFrom="opacity-0 scale-95"
+          enterTo="opacity-100 scale-100"
+          leave="transition ease-in duration-75 transform"
+          leaveFrom="opacity-100 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
+          {ref => (
+            <div className="md:hidden" id="mobile-menu">
+              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <NavLink
+                  style={{ color: "#1890ff" }}
+                  type="link"
+                  text="Home"
+                  href="/"
+                />
+                <NavLink
+                  style={{ color: "#1890ff" }}
+                  type="link"
+                  text="Project"
+                  href="/project"
+                />
+              </div>
+            </div>
+          )}
+        </Transition>
+      </nav>
     </div>
   );
 };
