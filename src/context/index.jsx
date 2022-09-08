@@ -7,8 +7,11 @@ export const AppContext = createContext(null);
 export const ContextWrapper = ({ children }) => {
   const [menuKey, setMenuKey] = useState("overview");
   const [url, setUrl] = useState("");
+  const [show, setShow] = useState(false);
   return (
-    <AppContext.Provider value={{ menuKey, setMenuKey, url, setUrl }}>
+    <AppContext.Provider
+      value={{ menuKey, setMenuKey, url, setUrl, show, setShow }}
+    >
       {children}
     </AppContext.Provider>
   );
