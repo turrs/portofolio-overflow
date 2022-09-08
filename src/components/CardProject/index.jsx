@@ -11,12 +11,12 @@ const CardProject = () => {
     window.open(`${url}`, "_blank");
   };
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full hover:shadow-lg hover:shadow-cyan-500/50">
       <div className="p-[16px]">
         <div className="flex justify-end w-full">
           <div className="p-1">
             <div
-              className="bg-white rounded-[5px] p-1 flex items-center justify-center hover:bg-sky-700"
+              className="bg-white rounded-[5px] p-1 flex items-center justify-center hover:shadow-lg hover:shadow-cyan-500/50"
               onClick={() => goLink(url)}
             >
               <ExpandAltOutlined
@@ -29,7 +29,7 @@ const CardProject = () => {
           </div>
           <div className="p-1">
             <div
-              className="bg-white rounded-[5px] p-1 flex items-center justify-center hover:bg-sky-700"
+              className="bg-white rounded-[5px] p-1 flex items-center justify-center hover:shadow-lg hover:shadow-cyan-500/50"
               onClick={closeShow}
             >
               <CloseSquareOutlined style={{ color: "red", fontSize: 20 }} />

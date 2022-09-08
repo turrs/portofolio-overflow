@@ -28,18 +28,22 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <NavLink
-                    style={{ color: "#1890ff" }}
-                    type="link"
-                    text="Home"
-                    href="/"
-                  />
-                  <NavLink
-                    style={{ color: "#1890ff" }}
-                    type="link"
-                    text="Project"
-                    href="/project"
-                  />
+                  <div className="p-1">
+                    <NavLink
+                      style={{ color: "#1890ff" }}
+                      type="link"
+                      text="Home"
+                      href="/"
+                    />
+                  </div>
+                  <div className="p-1">
+                    <NavLink
+                      style={{ color: "#1890ff" }}
+                      type="link"
+                      text="Project"
+                      href="/project"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -49,7 +53,7 @@ const Header = () => {
               </div>
               <div className="pr-5">
                 <div className=" pr-2 pl-2">
-                  <div className="bg-blue rounded-[5px]">
+                  <div className="group bg-blue hover:border-solid hover:border-blue hover:bg-white rounded-[5px] hover:shadow-lg hover:shadow-cyan-500/50">
                     <Tooltip
                       placement="bottom"
                       title={
@@ -66,13 +70,12 @@ const Header = () => {
                         </>
                       }
                     >
-                      <div className="flex flex-row justify-center items-center ml-3 mr-3 -mt-2 -mb-2">
+                      <div className="flex flex-row rounded justify-center items-center mr-3 ml-3 ">
                         <div className="flex justify-center items-center">
-                          <p className="flex text-white text-center font-medium  pr-1 pt-3 justify-center">
-                            Hire
+                          <p className="flex text-white group-hover:text-blue text-center font-medium  pr-1 pt-3 justify-center">
+                            Contact
                           </p>
                         </div>
-                        <PlusOutlined style={{ color: "white" }} />
                       </div>
                     </Tooltip>
                   </div>
@@ -82,11 +85,11 @@ const Header = () => {
                 <Avatar src={<Image src={Iavatar}></Image>} />
               </div>
             </div>
-            <div className="-mr-2 flex md:hidden">
+            <div className="-mr-2 flex md:hidden hover:shadow-lg hover:shadow-cyan-500/50">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-blue hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
