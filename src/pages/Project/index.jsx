@@ -9,11 +9,12 @@ import ListStack from "../../parts/ListStack";
 
 const Project = () => {
   const { Title } = Typography;
-  const { url } = useContext(AppContext);
+  const { url, show } = useContext(AppContext);
+
   return (
     <div className="bg-[#efefef] w-full h-full">
       <Header />
-      {url !== "" && <CardProject />}
+      {show && <CardProject />}
       <div className="flex justify-center">
         <div className="flex flex-col p-5">
           <div className="flex justify-center">

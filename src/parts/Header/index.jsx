@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import { IGithub } from "../../assets/images";
+import { Iavatar, IGithub } from "../../assets/images";
 import { NavLink } from "../../components";
+import { Avatar, Image, Tooltip } from "antd";
+import {
+  AlertOutlined,
+  PlusOutlined,
+  WhatsAppOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -34,6 +41,45 @@ const Header = () => {
                     href="/project"
                   />
                 </div>
+              </div>
+            </div>
+            <div className="flex justify-end items-center grow">
+              <div className="pr-5">
+                <AlertOutlined style={{ color: "#1890ff" }} />
+              </div>
+              <div className="pr-5">
+                <div className=" pr-2 pl-2">
+                  <div className="bg-blue rounded-[5px]">
+                    <Tooltip
+                      placement="bottom"
+                      title={
+                        <>
+                          <a
+                            className="p-1"
+                            href="https://api.whatsapp.com/send?phone=6285156112606&text=Hallo%20Fatur"
+                          >
+                            <WhatsAppOutlined style={{ color: "#1890ff" }} />
+                          </a>
+                          <a className="p-1" href="mailto: faturrahman7qz.com">
+                            <MailOutlined style={{ color: "#1890ff" }} />
+                          </a>
+                        </>
+                      }
+                    >
+                      <div className="flex flex-row justify-center items-center ml-3 mr-3 -mt-2 -mb-2">
+                        <div className="flex justify-center items-center">
+                          <p className="flex text-white text-center font-medium  pr-1 pt-3 justify-center">
+                            Hire
+                          </p>
+                        </div>
+                        <PlusOutlined style={{ color: "white" }} />
+                      </div>
+                    </Tooltip>
+                  </div>
+                </div>
+              </div>
+              <div className="p-2">
+                <Avatar src={<Image src={Iavatar}></Image>} />
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
