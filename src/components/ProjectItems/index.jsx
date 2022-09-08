@@ -16,7 +16,7 @@ const ProjectItems = ({ image, title, description, url }) => {
     setUrl(url);
   };
   return (
-    <div className="bg-white rounded-[10px] p-2">
+    <div className="bg-white rounded-[10px] p-2 shadow-md shadow-blue">
       <Card
         style={{
           width: 200,

@@ -8,7 +8,7 @@ const CarouselProject = () => {
     console.log(currentSlide);
   };
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row ">
       <div className="p-1">
         <ProjectItems
           image={IdataOn}
