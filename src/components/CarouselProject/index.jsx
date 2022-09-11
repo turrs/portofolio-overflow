@@ -2,13 +2,13 @@ import { Carousel, Col, Row } from "antd";
 import React from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import ProjectItems from "../ProjectItems";
-import { IadminStaycation, IdataOn } from "../../assets/images";
+import { IadminStaycation, IdataOn, Irestaurant } from "../../assets/images";
 const CarouselProject = () => {
   const onChange = currentSlide => {
     console.log(currentSlide);
   };
   return (
-    <div className="flex flex-row ">
+    <div className="flex flex-row flex-wrap">
       <div className="p-1">
         <ProjectItems
           image={IdataOn}
@@ -23,6 +23,14 @@ const CarouselProject = () => {
           title="Admin Staycation BWA"
           description="create admin dashboard for website staycationn using MERN | admin : admin password : rahasia"
           url="https://admin-stay.herokuapp.com/admin/dashboard"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Irestaurant}
+          title="Restaurant use Redux"
+          description="Learn create restaurant app use redux, Note: just save data in state global and not use API, the consequence data will lost if you refresh page "
+          url="https://restaurant-redux-app.vercel.app/"
         />
       </div>
     </div>

@@ -9,6 +9,7 @@ import Itailwindui from "./tailwindui.png";
 import Ivite from "./vitejs.svg";
 import Iantd from "./ant-design.svg";
 import Idevtools from "./devtools.svg";
+import Irestaurant from "./restaurant.png";
 export {
   IGithub,
   Iavatar,
@@ -21,4 +22,5 @@ export {
   Ivite,
   Iantd,
   Idevtools,
+  Irestaurant,
 };
