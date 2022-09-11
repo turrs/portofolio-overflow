@@ -10,6 +10,7 @@ import Ivite from "./vitejs.svg";
 import Iantd from "./ant-design.svg";
 import Idevtools from "./devtools.svg";
 import Irestaurant from "./restaurant.png";
+import Ilogo from "./logoFatur.svg";
 export {
   IGithub,
   Iavatar,
@@ -23,4 +24,5 @@ export {
   Iantd,
   Idevtools,
   Irestaurant,
+  Ilogo,
 };
