@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import { Iavatar, IGithub } from "../../assets/images";
+import { Iavatar, IGithub, Ilogo } from "../../assets/images";
 import { NavLink } from "../../components";
 import { Avatar, Image, Tooltip } from "antd";
 import {
@@ -22,7 +22,7 @@ const Header = () => {
                 <Link to="/">
                   <img
                     className="w-[32px] rounded-[30px] bg-white h-[32px]"
-                    src={IGithub}
+                    src={Ilogo}
                   />
                 </Link>
               </div>
