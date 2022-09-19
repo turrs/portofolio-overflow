@@ -9,7 +9,7 @@ const LeftContent = () => {
     <div className="flex md:pl-32 pl-0 md:pt-10 pt-0 flex-row md:flex-col static md:absolute">
       <div className="flex md:items-center pt-2 pr-5 pl-5 pb-5 ">
         <Avatar
-          size={{ xs: 80, sm: 150, md: 150, lg: 150, xl: 300, xxl: 800 }}
+          size={{ xs: 80, sm: 150, md: 150, lg: 150, xl: 300, xxl: 360 }}
           src={Iavatar}
         />
       </div>
