@@ -11,7 +11,9 @@ import Iantd from "./ant-design.svg";
 import Idevtools from "./devtools.svg";
 import Irestaurant from "./restaurant.png";
 import Ilogo from "./logoFatur.svg";
+import Istaycation from "./staycation.png";
 export {
+  Istaycation,
   IGithub,
   Iavatar,
   Ibook,

@@ -2,9 +2,14 @@ import { Carousel, Col, Row } from "antd";
 import React from "react";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import ProjectItems from "../ProjectItems";
-import { IadminStaycation, IdataOn, Irestaurant } from "../../assets/images";
+import {
+  IadminStaycation,
+  IdataOn,
+  Irestaurant,
+  Istaycation,
+} from "../../assets/images";
 const CarouselProject = () => {
-  const onChange = currentSlide => {
+  const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
   return (
@@ -31,6 +36,14 @@ const CarouselProject = () => {
           title="Restaurant use Redux"
           description="Learn create restaurant app use redux, Note: just save data in state global and not use API, the consequence data will lost if you refresh page "
           url="https://restaurant-redux-app.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Istaycation}
+          title="Staycation App"
+          description="create app to booking hotel use nextjs + tailwind"
+          url="https://staycation-neon.vercel.app/"
         />
       </div>
     </div>
