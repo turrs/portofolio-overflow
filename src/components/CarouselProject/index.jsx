@@ -5,6 +5,7 @@ import ProjectItems from "../ProjectItems";
 import {
   IadminStaycation,
   IdataOn,
+  Ipoonft,
   Irestaurant,
   Istaycation,
 } from "../../assets/images";
@@ -44,6 +45,14 @@ const CarouselProject = () => {
           title="Staycation App"
           description="create app to booking hotel use nextjs + tailwind"
           url="https://staycation-neon.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Ipoonft}
+          title="PooNFT"
+          description="create app magiceden lite is marketplace nft in solana blockchain use nextjs + tailwind"
+          url="https://poonft.vercel.app/"
         />
       </div>
     </div>

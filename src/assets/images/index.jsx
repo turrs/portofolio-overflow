@@ -12,6 +12,7 @@ import Idevtools from "./devtools.svg";
 import Irestaurant from "./restaurant.png";
 import Ilogo from "./logoFatur.svg";
 import Istaycation from "./staycation.png";
+import Ipoonft from "./poonft.png";
 export {
   Istaycation,
   IGithub,
@@ -27,4 +28,5 @@ export {
   Idevtools,
   Irestaurant,
   Ilogo,
+  Ipoonft,
 };
