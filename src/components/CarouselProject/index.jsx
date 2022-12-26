@@ -4,6 +4,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import ProjectItems from '../ProjectItems';
 import {
   IadminStaycation,
+  Iallforum,
   IdataOn,
   IdekilSwap,
   Ipoonft,
@@ -59,9 +60,17 @@ const CarouselProject = () => {
       <div className="p-1">
         <ProjectItems
           image={IdekilSwap}
-          title="Deswap"
+          title="Dexswap"
           description="create app dex (decentralize exchange) on Polygon Blockchain use 0xapi,rainbow adapter wallet, ether and wagmi"
           url="https://dekilswap-testnet.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Iallforum}
+          title="All-Forum"
+          description="create app forum is app discussion user can ask question and answer question, build use CRA with styling tailwind and redux for state management."
+          url="https://allforum.vercel.app/"
         />
       </div>
     </div>

@@ -14,6 +14,7 @@ import Ilogo from './logoFatur.svg';
 import Istaycation from './staycation.png';
 import Ipoonft from './poonft.png';
 import IdekilSwap from './dekilswap.png';
+import Iallforum from "./allforum.png"
 
 export {
   Istaycation,
@@ -31,5 +32,5 @@ export {
   Irestaurant,
   Ilogo,
   Ipoonft,
-  IdekilSwap,
+  IdekilSwap,Iallforum
 };
