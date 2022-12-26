@@ -1,14 +1,15 @@
-import { Carousel, Col, Row } from "antd";
-import React from "react";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import ProjectItems from "../ProjectItems";
+import { Carousel, Col, Row } from 'antd';
+import React from 'react';
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import ProjectItems from '../ProjectItems';
 import {
   IadminStaycation,
   IdataOn,
+  IdekilSwap,
   Ipoonft,
   Irestaurant,
   Istaycation,
-} from "../../assets/images";
+} from '../../assets/images';
 const CarouselProject = () => {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
@@ -53,6 +54,14 @@ const CarouselProject = () => {
           title="PooNFT"
           description="create app magiceden lite is marketplace nft in solana blockchain use nextjs + tailwind"
           url="https://poonft.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={IdekilSwap}
+          title="Deswap"
+          description="create app dex (decentralize exchange) on Polygon Blockchain use 0xapi,rainbow adapter wallet, ether and wagmi"
+          url="https://dekilswap-testnet.vercel.app/"
         />
       </div>
     </div>
