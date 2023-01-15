@@ -15,6 +15,7 @@ import Istaycation from './staycation.png';
 import Ipoonft from './poonft.png';
 import IdekilSwap from './dekilswap.png';
 import Iallforum from "./allforum.png"
+import Imarketplace from "./marketplace.png"
 
 export {
   Istaycation,
@@ -32,5 +33,7 @@ export {
   Irestaurant,
   Ilogo,
   Ipoonft,
-  IdekilSwap,Iallforum
+  IdekilSwap,
+  Iallforum,
+  Imarketplace
 };

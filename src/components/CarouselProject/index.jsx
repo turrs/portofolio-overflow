@@ -7,6 +7,7 @@ import {
   Iallforum,
   IdataOn,
   IdekilSwap,
+  Imarketplace,
   Ipoonft,
   Irestaurant,
   Istaycation,
@@ -71,6 +72,14 @@ const CarouselProject = () => {
           title="All-Forum"
           description="create app forum is app discussion user can ask question and answer question, build use CRA with styling tailwind and redux for state management."
           url="https://allforum.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Imarketplace}
+          title="Shoppify Marketplace App"
+          description="create app shoppify is marketplace where user can buy items on website, build with Typescript using react,next js, redux for state management and tailwind for styling"
+          url="https://shoppify-chi.vercel.app/"
         />
       </div>
     </div>
