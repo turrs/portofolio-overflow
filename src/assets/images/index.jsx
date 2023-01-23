@@ -16,6 +16,7 @@ import Ipoonft from './poonft.png';
 import IdekilSwap from './dekilswap.png';
 import Iallforum from "./allforum.png"
 import Imarketplace from "./marketplace.png"
+import Iquiz from "./quizapp.png"
 
 export {
   Istaycation,
@@ -35,5 +36,6 @@ export {
   Ipoonft,
   IdekilSwap,
   Iallforum,
-  Imarketplace
+  Imarketplace,
+  Iquiz
 };

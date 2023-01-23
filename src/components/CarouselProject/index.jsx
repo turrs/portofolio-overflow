@@ -9,6 +9,7 @@ import {
   IdekilSwap,
   Imarketplace,
   Ipoonft,
+  Iquiz,
   Irestaurant,
   Istaycation,
 } from '../../assets/images';
@@ -80,6 +81,14 @@ const CarouselProject = () => {
           title="Shoppify Marketplace App"
           description="create app shoppify is marketplace where user can buy items on website, build with Typescript using react,next js, redux for state management and tailwind for styling"
           url="https://shoppify-chi.vercel.app/"
+        />
+      </div>
+      <div className="p-1">
+        <ProjectItems
+          image={Iquiz}
+          title="Quiz App"
+          description="create app Quiz, build with Typescript using react,next js, redux for state management and tailwind for styling"
+          url="https://quizapp-sandy.vercel.app/"
         />
       </div>
     </div>
